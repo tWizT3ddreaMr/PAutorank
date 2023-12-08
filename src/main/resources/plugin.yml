@@ -1,6 +1,6 @@
 name: PautoRank
 author: tWizT3d_dreaMr
-version: 0.0.1
+version: 0.0.2
 main: me.tWizT3d_dreaMr.PAutorank.main
 depend: [ Plan ]
 api-version: 1.20

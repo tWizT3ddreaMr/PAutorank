@@ -27,6 +27,9 @@ public class PlayerJoin implements Listener {
 	    	int i=lon.intValue();
 	    	this.plugin.getPlayTimeStorageManager().setPlayerTime(p.getUniqueId(), i);
 	    	List<Path> s=this.plugin.getPathManager().getActivePaths(p.getUniqueId());
+	    	if(p.isOp()) {
+	    		return;
+	    	}
 	    	if(s.isEmpty()) {
 	    		for(Path pa:this.plugin.getPathManager().getAllPaths())
 	    		this.plugin.getPathManager().assignPath(pa, p.getUniqueId(), true);
